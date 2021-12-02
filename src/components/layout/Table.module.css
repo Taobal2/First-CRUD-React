@@ -1,0 +1,22 @@
+.table {
+    width: 100%;
+    padding: 1rem;
+}
+
+.table tbody tr {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.table tbody td span {
+    font-size: 15px;
+    padding: 0 0 0 2px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.table tbody td span:hover {
+    font-size: 20px;
+    cursor: pointer;
+}
