@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 
 const Table = ({ allUsersData, onClickEdit, onClickDelete }) => {
 
-const navigate = useNavigate()
 
   return (
     <Card>

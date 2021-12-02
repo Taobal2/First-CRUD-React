@@ -2,14 +2,19 @@ import React from "react";
 import Card from "../ui/Card";
 import { useState } from "react";
 import classes from "./Form.module.css";
+import {useLocation, useNavigate} from 'react-router-dom';
 
-const Form = ({ onSubmitForm}) => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [age, setAge] = useState("");
-  const [mobileNumber, setMobileNumber] = useState("");
-  const [address, setAddress] = useState("");
+const Form = ({onSubmitForm, }) => {
+  const location = useLocation();
+  const navigate = useNavigate()
+  const users = location.state;
+  const [firstName, setFirstName] = useState(users && users.firstName != null ? users.firstName : "");
+  const [lastName, setLastName] = useState(users && users.lastName!= null ? users.lastName: "");
+  const [email, setEmail] = useState(users && users.email != null ? users.email : "");
+  const [age, setAge] = useState(users && users.age != null ? users.age: "");
+  const [mobileNumber, setMobileNumber] = useState(users && users.mobileNumber != null ? users.mobileNumber : "");
+  const [address, setAddress] = useState(users && users.address != null ? users.address : "");
+  const [id, setId] = useState(users && users.id != null ? users.id : null);
 
   const submitHandler = (event) => {
     event.preventDefault();
@@ -21,6 +26,7 @@ const Form = ({ onSubmitForm}) => {
       age: age,
       mobileNumber: mobileNumber,
       address: address,
+      id: id
     };
 
     onSubmitForm(obj);
@@ -33,6 +39,9 @@ const Form = ({ onSubmitForm}) => {
     console.log(obj);
   };
 
+  const goBack = () => {
+    navigate('/')
+  }
   return (
     <Card>
       <form className={classes.form} onSubmit={submitHandler}>
@@ -105,7 +114,7 @@ const Form = ({ onSubmitForm}) => {
 
         <div className={classes.actions}>
           <button>Save</button>
-          {/* <button>Cancel</button> */}
+          <button className={classes.btncancel} onClick={goBack}>Cancel</button>
         </div>
       </form>
     </Card>

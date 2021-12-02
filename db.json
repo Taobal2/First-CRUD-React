@@ -1,22 +1,22 @@
 {
   "users": [
     {
-      "id": 1,
       "firstName": "Oladele",
       "lastName": "Ogabi",
       "email": "oladele@yahoo.com",
-      "age": 12,
-      "mobileNumber": "+2346388239932",
-      "address": "Imeke Badagry, Lagos."
+      "age": "89",
+      "mobileNumber": "08035768931",
+      "address": "Imeke Badagry, Lagos.",
+      "id": 1
     },
     {
-      "id": 2,
       "firstName": "Fiyinfoluwa",
       "lastName": "Oyesola",
-      "email": "fiyin@yahoo.com",
-      "age": 27,
-      "mobileNumber": "+2257394049",
-      "address": "no 2, alfred street, Dolphin Estate, Lagos."
+      "email": "fiyinoyesola@yahoo.com",
+      "age": "26",
+      "mobileNumber": "08023832932",
+      "address": "no 2, alfred street, Dolphin Estate, Lagos.",
+      "id": 2
     },
     {
       "firstName": "Taobal",
@@ -37,13 +37,22 @@
       "id": 5
     },
     {
-      "firstName": "test2",
-      "lastName": "test2",
-      "email": "riwjhriu@yaoo.com",
-      "age": "129",
-      "mobileNumber": "748374",
-      "address": "uydgsudj dsiuds",
-      "id": 6
+      "firstName": "dotun",
+      "lastName": "dotun",
+      "email": "ogabioladele@gmail.com",
+      "age": "43",
+      "mobileNumber": "48934389",
+      "address": "No 3B, Malvern, Cadogan Estate, Jakande.",
+      "id": 7
+    },
+    {
+      "firstName": "Taofeek",
+      "lastName": "Baloguns",
+      "email": "tbaloguns@yahoo.com",
+      "age": "109",
+      "mobileNumber": "7328378237",
+      "address": "Agege. Lagos.",
+      "id": 8
     }
   ]
 }

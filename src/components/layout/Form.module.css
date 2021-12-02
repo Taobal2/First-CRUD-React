@@ -68,3 +68,11 @@ input[type="email"], textarea {
     width: 100%;
   }
 }
+
+.btncancel {
+  background-color: grey !important;
+}
+
+.btncancel:hover {
+  background-color: rgb(92, 90, 90) !important;
+}

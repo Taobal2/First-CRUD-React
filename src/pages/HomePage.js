@@ -30,7 +30,7 @@ const HomePage = () => {
   const onClickEdit = async (id) => {
     const res = await fetch(`http://localhost:5000/users/${id}`);
     const data = await res.json();
-    return data
+    navigate('/create-page', {state: data});
   };
 
   // Delete User
